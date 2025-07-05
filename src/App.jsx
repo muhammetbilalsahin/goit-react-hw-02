@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import Feedback from './components/Feedback/Feedback.jsx';
 import Options from './components/Options/Options.jsx';
+import Description from './components/Description/Description.jsx';
 import Notification from './components/Notification/Notification.jsx';
 import styles from './components/Options/Options.module.css';
+
+
 
 function App() {
   const [feedback, setFeedback] = useState(() => {
@@ -34,10 +37,8 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Sip Happens Café</h1>
-      <p className={styles.description}>
-        Please leave your feedback about our service by selecting one of the options below.
-      </p>
+  
+      <Description  title="Sip Happens Café" text="Please leave your feedback about our service by selecting one of the options below." />
 
       <Options
         options={Object.keys(feedback)}

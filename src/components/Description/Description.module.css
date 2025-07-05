@@ -1,0 +1,15 @@
+.container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #4cafef;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1.1rem;
+  color: #555;
+}
